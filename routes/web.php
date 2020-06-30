@@ -20,3 +20,6 @@ Route::post('/mahasiswaInput', 'mahasiswa@input');
 Route::get('/mahasiswa/edit/{id}', 'mahasiswa@updateView');
 Route::post('/mahasiswa/update', 'mahasiswa@update');
 Route::get('/mahasiswa/delete/{id}', 'mahasiswa@delete');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
